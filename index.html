@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Basketball Africa League</title>
+	<style>
+	*{
+
+		background-color: #F0F2EE;
+		background-repeat: no-repeat;
+	}
+		ul{
+			margin: 0px;
+			padding: 0px;
+			list-style-type: none;
+
+		}
+		li{
+			float: left;
+			margin: 14px 16px;
+			font-size: 30px;
+			color: black;
+		}
+		.dropdown{
+			position: relative;
+
+		}
+		.dropdownbtn{
+
+		}
+		a{
+			text-decoration: none;
+		}
+
+		.dropdown-content{
+			display: none;
+			width: 200px;
+			height: auto;
+		}
+		.dropdownbtn:hover .dropdown-content{
+			display: block;
+
+		}
+
+		input[type=text]{
+			width: 0px;
+			transition: 1s ;
+			border: none;
+			background-image: url('images.png');
+			background-position: 5px 5px;
+			background-repeat: no-repeat;
+			background-size: 20px;
+			padding: 10px 20px 10px 30px;
+			font-size: 20;
+			cursor: pointer;
+			float: right;
+			border-radius: 10px;
+
+		}
+		input[type=text]:focus{
+			width: 650px;
+			border: none;
+			font-size: 28px;
+			background-size: 40px;
+			padding: 10px 20px 10px 50px;
+		}
+
+		.wlcm{
+			width: 400px;
+			background-color: white;
+			height: 400px;
+			box-shadow: 0 4px 8px 0 ;
+			float: left;
+			margin-left: 200px;
+			margin-top: 50px;
+			border-radius: 12px;
+			position: relative;
+			text-align: center;
+		}
+		.hd{
+			position: relative;
+			height: 200px;
+			background-color: blue;
+			color: white;
+			font-size: 200px;
+			text-align: center;
+			box-shadow: 0 9px 12px 0 rgb(255, 255, 255, 0.5);
+		}
+
+	.bd{
+		position: relative;
+		width: 800px;
+		height: 200px;
+		box-shadow: 0 5px 8px 0;
+		background-color: white;
+		margin-top: 20px;
+		margin-left: 270px;
+		color: black;
+		overflow: scroll;
+		margin-bottom: 20px;
+		font-family: unset;
+		font-size: 20px;
+	}
+
+	h1{
+		background-color: white;
+		color: black;
+		font-family: sans-serif;
+		text-align: left;
+		margin: 20px 10px;
+		padding: 20px 100px;
+	}
+
+	#header,#content{
+		text-align: center;
+		font-size: 20px;
+	}
+
+	.active{
+		border-bottom: 2px solid red;
+	}
+
+	img{
+		width: 200px;
+		border-radius: 50px;
+	}
+
+	.wlcm-content img{
+		width: 50px;
+		border-radius: 50px;
+	}
+	button{
+		margin-top: 20px;
+		margin-left: 600px;
+		border-radius: 20px;
+		box-shadow: darkred;
+		background-color: darkgreen;
+		font-size: 20px;
+
+	}
+	</style>
+</head>
+<body>
+	<div class="logo">
+		<img src="logo.png">
+	</div>
+	<div>
+<ul>
+	<li class="active"><a href="">home</a></li>
+	<li><a href="">contact</a></li>
+	<li>
+		<div class="dropdown">
+			<a href=""><span class="dopdownbtn">About</span></a>
+			<div class="dropdown-content">
+				<a href="#">company</a>
+				<a href="#">workers</a>
+				<a href="#">place</a>				
+			</div>			
+		</div>
+	</li>
+	<input type="text" name="" placeholder="Search"><br>
+</ul></div><br>
+<h1>BASKET BALL  POINT BILLBOARD Basketball Africa League</h1>
+<div class="wlcm">
+<div class="hd">80</div>
+<div class="wlcm-content">
+	<h3>Team : REG BBC</h3>
+	<h4>Basketball Africa League</h4>
+	<h4>Country : RWANDA</h4>
+	<img src="logo.png">
+</div></div>
+<div class="wlcm">
+<div class="hd">57</div>
+<div class="wlcm-content">
+	<h3>Team : Patriote BBC</h3>
+	<h4>Basketball Africa League</h4>
+	<h4>Country : RWANDA</h4>
+	<img src="logo.png">
+</div></div><div>
+<button type="submit" onclick="func()">View Comments</button></div>
+<div class="bd">
+	<h3 id="header"></h3>
+	<p id="content">
+		
+	</p>
+
+</div>
+
+<script>
+	function func(){
+		document.getElementById('content').innerHTML ="Dear JamesGreetings from KigaliI have pleasure to introduce you to our graduates who-have completed the Six-months training on We Development and also their background is ranging from Software Development to coding to developers from their University level.So as we discussed about the online Job-OpportunitiesI want to recommend them so that you will share the opportunity as it comes through.And on the trainees -sidefor those who are not yet employedplease take note of trying the online-IT jobs which you can benefit through our partnerMr.James.James,you will share all the information on how to-go about it and please remember to copy us-so that we can assist on the reach-out whenever possible.Thank you very muchfor your collaboration."; 
+
+		document.getElementById('header').innerHTML='Comments about the match in History';
+	}
+</script>
+</body>
+</html>
